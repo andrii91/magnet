@@ -1,0 +1,79 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  //    @import '../mobile';
+  & {
+    .main {
+      overflow: hidden;
+    }
+    .head {
+      background: url('../images/ht.png') no-repeat right top;
+      padding-bottom: 70px;
+    }
+  }
+  .head-info p {
+    max-width: 200px;
+  }
+  .research {
+    padding: 70px 0;
+  }
+  .free_check_list-img {
+    background-size: 100%;
+    &:before {
+          width: 40px;
+        height: 116px;
+        position: absolute;
+        bottom: 130px;
+        right: 29px;
+        background-size: 100%;
+
+    }
+  }
+  .free_check_list-img img {
+    max-width: 265px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .check-btn {
+    text-align: center;
+        padding: 23px 35px 21px;
+  }
+  .check_list_info-item .count {
+  font-size: 25px;
+  }
+  .check_list_info {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-position: -50% center;
+    .col-8 {
+      padding: 0;
+    }
+  }
+  .check_list_info:before {
+    height: 100%;
+  }
+  .check_list_info-item h5 {
+    font-size: 19px;
+  }
+  .check_list_info-item p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .errors-img {
+    img {
+      width: 100%;
+    }
+  }
+  .errors-item h5 {
+    br {
+      display: none;
+    }
+  }
+  .items {
+    display: block;
+    max-width: 100%;
+  }
+  .mb45 {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,497 @@
+@import 'variables';
+
+*{
+  outline: none;
+}
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  @import 'MediaQueries/main';
+  overflow-x: hidden;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.main {
+  background: url('../images/bg-lines.svg') center;
+  background-repeat: repeat-y;
+}
+
+.head {
+  padding: 20px 0 122px;
+  background: url('../images/h-img.png') no-repeat 195% top;
+  min-height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 40px;
+  svg {
+    width: 40px;
+  }
+}
+
+.nav-info {
+  float: right;
+  color: #28292d;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding-left: 45px;
+  position: relative;
+  &:before {
+    content: "";
+    background: url('../images/bl1_icon_attention.svg') no-repeat;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.head-title {
+  margin-top: 110px;
+  color: #28292d;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.head-sub_title {
+  color: #28292d;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 40px;
+  line-height: 1.2;
+  &.small {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 0;
+  }
+}
+
+.head-info {
+  color: #28292d;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 21px;
+  p{
+    display: inline-block;
+    max-width: 240px;
+    margin-right: 27px;
+    vertical-align: top;
+  }
+  span {
+    display: inline-block;
+    color: #b39c72;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    vertical-align: top;
+    margin-top: 11px;
+  }
+}
+
+.head-question {
+  margin-bottom: 14px;
+  span {
+    color: #ffffff;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.36px;
+    padding: 0px 7px;
+    background-color: #222222;
+    margin-bottom: 2px;
+    display: inline-block;
+  }
+}
+
+.question-btn {
+  display: inline-block;
+  border: 0;
+  color: #ffffff;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.68px;
+  padding: 16px 64px 16px 32px;
+  transition: 0.2s;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+  border-radius: 2px;
+  background-color: #1c54e9;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 24px;
+  &:before {
+    content: "";
+    background: url("../images/ar.svg") no-repeat;
+    width: 21px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 33px;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    background-color: #b39c72;
+    color: #fff;
+  } 
+}
+
+.research {
+  padding: 117px  0 95px;
+}
+
+.research-img {
+  max-width: 613px;
+  img {
+    width: 100%;
+  }
+}
+
+.research-item {
+  margin-left: auto;
+  max-width: 424px;
+  h6 {
+    color: #b39c72;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    margin: 0;
+    line-height: 1;
+  }
+  h2 {
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  p {
+    color: #28292d;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.free_check_list {
+  padding: 95px 0 160px;
+}
+
+.free_check_list-item {
+  h2 {
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #28292d;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 40px;
+    b {
+      font-family: "Gilroy - Extra Bold";
+    }
+  }
+}
+
+.free_check_list-img {
+  text-align: right;
+  background: url('../images/bgIMG.png') no-repeat left center;
+  max-width:  652px;
+  min-height: 424px;
+  margin-left: auto;
+  line-height: 30;
+  position: relative;
+  &:before {
+    content: "";
+    background: url('../images/tt.svg') no-repeat center;
+    width: 74px;
+    height: 162px;
+    position: absolute;
+    bottom: 47px;
+    right: 29px;
+  }
+  img {
+    max-width: 500px;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+.check-btn {
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1.68px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+    border-radius: 2px;
+    background-color: #28292d;
+    padding: 23px 41px 21px;
+    transition: 0.2s;
+  &:hover {
+    color: #ffffff;
+    box-shadow: 0 5px 25px rgba(28, 84, 233, 0.3);
+    background-color: #1c54e9;
+  }
+}
+
+.check_list_info {
+  background-color: #222222;
+  padding: 155px 0 60px;
+  background-image: url('../images/shapes.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    background: url('../images/bg-lines.png') repeat-y center;
+    width: 1139px;
+    height: 639px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.1;
+  }
+}
+
+.check_list_info-title {
+  color: #ffffff;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 70px;
+}
+
+.check_list_info-item {
+  margin-bottom: 60px;
+  .count {
+    color: #b39c72;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 36px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    &:before {
+      content: "";
+      background: url('../images/5456.svg') no-repeat;
+      width: 49px;
+      height: 10px;
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+  h5 {
+    color: #ffffff;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  p {
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+.errors {
+  padding: 160px 0;
+}
+
+.errors-title {
+  color: #28292d;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.errors-info {
+  color: #28292d;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  b {
+    font-family: "Gilroy - Extra Bold";
+    font-weight: 400;
+  }
+  margin-bottom: 0;
+}
+
+.errors-item {
+  margin-top: 35px;
+  h5 {
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+  }
+  p {
+    color: #28292d;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  h6 {
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.mt119 {
+  margin-top: 119px;
+}
+
+.mb45 {
+  margin-bottom: 45px;
+}
+
+.exhortation {
+  text-align: center;
+  padding: 148px 0;
+  background: url('../images/bg5813.png') no-repeat center;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  h4 {
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+  &:before {
+    content: "";
+    background: url('../images/shapes456.png') no-repeat;
+    width: 1229px;
+    height: 525px;
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.exhortation-title {
+  color: #28292d;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.exhortation-info {
+  color: #28292d;
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+  
+}
+
+.line {
+  display: inline-block;
+  width: 0;
+  height: 64px;
+  border: 2px solid #222;
+}
+
+.exhortation-img {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  img {
+    width: 38px;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: #222222;
+  .logo {
+    fill: #fff;
+  }
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999999;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    transition: 0.2s;
+    margin: 0 18px;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.items {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 50%;
+}

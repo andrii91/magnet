@@ -1,0 +1,10 @@
+@import '../../mq';
+
+@media #{$desktopHD} {
+    @import '../desktop';
+    & {
+      .head {
+            background: url(../images/h-img.png) no-repeat right top;
+      }
+    }
+}
