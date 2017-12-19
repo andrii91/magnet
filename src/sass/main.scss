@@ -176,7 +176,7 @@
   top: 50%;
   left: 50%;
   transition: all 400ms;
-  padding: 60px;
+  padding: 69px 67px;
   width: 70%;
   max-width: 490px;
   min-width: 300px;
@@ -200,6 +200,13 @@
     color: #28292d; 
   font-family: "Gilroy - Extra Bold";
   }
+  h3 {
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 }
 
 
@@ -216,8 +223,8 @@
   width: 16px;
   height: 16px;
   position: absolute;
-  right: 50px;
-  top: 50px;
+  right: 24px;
+  top: 24px;
   cursor: pointer;
   background: url('../images/close-icon.svg') no-repeat;
   opacity: 0.5;

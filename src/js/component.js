@@ -39,4 +39,18 @@ $(document).ready(function() {
     
   }
   
+  $("input[name='phone']").inputmask("+38 (099) 999-99-99");
+  $('.registration input').focus(function () {
+    $('.registration label').removeClass('active');
+    $(this).parent().addClass('active');
+  });
+  
+  $('.registration input').change(function(){
+    if($(this).val()){
+      $(this).parent().addClass('noempty');
+    }else{
+      $(this).parent().removeClass('noempty');
+    }
+  })
+  
 });
